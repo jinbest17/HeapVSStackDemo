@@ -31,3 +31,12 @@ void reallocateOnHeap() {
     }
     free(reallocPtr);
 }
+int main()
+{
+    cout<<"test update variable on heap"<<endl;
+    updateVarStack();
+    cout<<"test update variable on stack"<<endl;
+    updateVarHeap();
+    cout<<"test reallocation on heap"<<endl;
+    reallocateOnHeap();
+}
